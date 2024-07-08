@@ -1,0 +1,50 @@
+// Fonts
+
+$SourceSansPro-Regular: 'SourceSansPro-Regular', 'Helvetica', 'Arial', sans-serif;
+$SourceSansPro-It: 'SourceSansPro-It', 'Helvetica', 'Arial', sans-serif;
+$SourceSansPro-Bold: 'SourceSansPro-Bold', 'Helvetica', 'Arial', sans-serif;
+
+// Colors
+
+$bgcolor: #ffffff;
+$black:#000000;
+$white:#ffffff;
+
+
+// Images
+
+$bg: url('../images/game-bg.png');
+$ball : url('../images/ball.png');
+$diamond : url('../images/diamond.png');
+
+
+@mixin diamond{
+    background-image: url('../images/diamond.png');
+    background-size: auto auto;
+    width: 78px;
+    height: 73px;
+    position: absolute;
+    bottom: 56%;
+}
+
+@mixin ball{
+    background-image: url('../images/ball.png');
+    background-size: auto auto;
+    width: 77px;
+    height: 77px;
+    z-index: 999;
+    animation: bounce 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+    from { transform:translate3d(0px,0px,0px);}
+    to { transform:translate3d(0px,-50px,0px);}
+  } 
+
+
+@keyframes blinker {
+    50% {
+      opacity: 0.7;
+    }
+}
+

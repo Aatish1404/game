@@ -1,0 +1,43 @@
+@font-face {
+	font-family: "SourceSansPro-Regular";
+	src: url("../fonts/SourceSansPro-Regular.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "SourceSansPro-Bold";
+	src: url("../fonts/SourceSansPro-Bold.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	border:0;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+:root{
+	--header:#ffffff;
+    --bgcolor: #000000;
+    --black:#000000;
+    --white:#ffffff;
+    --Grey:#E9E9E9;
+    --green: #00FFAC;
+	--mainWidth:1500px;
+	--mainHeight:600px;
+}
+
+
+
